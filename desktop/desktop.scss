@@ -1,0 +1,26 @@
+@import "common/foundation/variables";
+
+.link-bottom-line {
+  font-size: unset;
+}
+
+.topic-list-item .discourse-tags {
+  display: block;
+  font-size: $font-down-2;
+  clear: both;
+}
+
+.suggested-topics {
+  th.category {
+    width: 150px;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .topic-list {
+    .category {
+      min-width: 0;
+      padding: 0;
+    }
+  }
+}
