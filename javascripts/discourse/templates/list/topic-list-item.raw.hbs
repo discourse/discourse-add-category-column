@@ -1,5 +1,5 @@
 {{#if bulkSelectEnabled}}
-  <td class="bulk-select">
+  <td class="bulk-select topic-list-data">
     <input type="checkbox" class="bulk-select">
   </td>
 {{/if}}
@@ -11,20 +11,20 @@
   This causes the topic-post-badge to be considered the same word as "text"
   at the end of the link, preventing it from line wrapping onto its own line.
 --}}
-<td class='main-link clearfix' colspan="1">
-  <span class='link-top-line'>
+<td class="main-link clearfix topic-list-data" colspan="1">
+  <span class="link-top-line">
     {{~raw-plugin-outlet name="topic-list-before-status"}}
     {{~raw "topic-status" topic=topic}}
     {{~topic-link topic class="raw-link raw-topic-link"}}
     {{~#if topic.featured_link}}
-    {{~topic-featured-link topic}}
+      {{~topic-featured-link topic}}
     {{~/if}}
     {{~raw-plugin-outlet name="topic-list-after-title"}}
     {{~raw "list/unread-indicator" includeUnreadIndicator=includeUnreadIndicator 
                                    topicId=topic.id 
                                    unreadClass=unreadClass~}}
     {{~#if showTopicPostBadges}}
-    {{~raw "topic-post-badges" unread=topic.unread newPosts=topic.displayNewPosts unseen=topic.unseen url=topic.lastUnreadUrl newDotText=newDotText}}
+      {{~raw "topic-post-badges" unread=topic.unread newPosts=topic.displayNewPosts unseen=topic.unseen url=topic.lastUnreadUrl newDotText=newDotText}}
     {{~/if}}
   </span>
 
@@ -49,7 +49,7 @@
 {{raw "list/posts-count-column" topic=topic}}
 
 {{#if showLikes}}
-  <td class="num likes">
+  <td class="num likes topic-list-data">
     {{#if hasLikes}}
       <a href='{{topic.summaryUrl}}'>
         {{number topic.like_count}} {{d-icon "heart"}}</td>
@@ -58,7 +58,7 @@
 {{/if}}
 
 {{#if showOpLikes}}
-  <td class="num likes">
+  <td class="num likes topic-list-data">
     {{#if hasOpLikes}}
       <a href='{{topic.summaryUrl}}'>
         {{number topic.op_like_count}} {{d-icon "heart"}}</td>
@@ -66,6 +66,6 @@
 {{/if}}
 {{/if}}
 
-<td class="num views {{topic.viewsHeat}}">{{number topic.views numberKey="views_long"}}</td>
+<td class="num views {{topic.viewsHeat}} topic-list-data">{{number topic.views numberKey="views_long"}}</td>
 
-{{raw "list/activity-column" topic=topic class="num" tagName="td"}}
+{{raw "list/activity-column" topic=topic class="num topic-list-data" tagName="td"}}
