@@ -4,6 +4,7 @@ export default {
   initialize(container) {
     withPluginApi("0.8", api => {
       api.modifyClass("component:topic-list-item", {
+        pluginId: 'addCategoryColumn',
         titleColSpan: function() {
           return !this.get("hideCategory") &&
             this.get("topic.isPinnedUncategorized")
