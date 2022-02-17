@@ -1,4 +1,4 @@
-import discourseComputed, { observes } from "discourse-common/utils/decorators";
+import discourseComputed from "discourse-common/utils/decorators";
 import { apiInitializer } from "discourse/lib/api";
 
 export default apiInitializer("0.8", api => {
