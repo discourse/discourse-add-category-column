@@ -1,5 +1,5 @@
 {{#if bulkSelectEnabled}}
-  <th class="bulk-select">
+  <th class="bulk-select topic-list-data">
     {{#if canBulkSelect}}
       {{raw "flat-button" class="bulk-select" icon="list" title="topics.bulk.toggle"}}
     {{/if}}
@@ -10,7 +10,7 @@
   {{raw "topic-list-header-column" sortable=sortable order='category' name='category_title'}}
 {{/unless}}
 {{#if showPosters}}
-  {{raw "topic-list-header-column" order='posters'}}
+  {{raw "topic-list-header-column" order='posters' ariaLabel=(i18n "category.sort_options.posters") forceName=(theme-i18n "users")}}
 {{/if}}
 {{raw "topic-list-header-column" sortable=sortable number='true' order='posts' name='replies'}}
 {{#if showLikes}}
