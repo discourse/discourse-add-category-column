@@ -1,5 +1,7 @@
-.link-bottom-line .badge-wrapper {
-  display: none;
+.link-bottom-line {
+  .badge-wrapper /* Remove when 3.2 becomes stable */, .badge-category__wrapper  {
+    display: none;
+  }
 }
 
 .category.topic-list-data {
