@@ -1,11 +1,7 @@
 .link-bottom-line {
-  font-size: unset;
-}
-
-.topic-list-item .discourse-tags {
-  display: block;
-  font-size: var(--font-down-2);
-  clear: both;
+  .badge-wrapper /* Remove when 3.2 becomes stable */, .badge-category__wrapper  {
+    display: none;
+  }
 }
 
 .category.topic-list-data {
