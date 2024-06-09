@@ -1,6 +1,6 @@
 {
   "name": "Add Category Column",
   "about_url": "https://meta.discourse.org/t/add-category-column/103893",
-  "license_url": "https://github.com/tshenry/discourse-add-category-column/blob/master/LICENSE",
+  "license_url": "https://github.com/discourse/discourse-add-category-column/blob/main/LICENSE",
   "component": true
 }
