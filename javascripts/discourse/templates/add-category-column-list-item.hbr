@@ -1,3 +1,4 @@
+{{!-- has-modern-replacement --}}
 {{#unless view.mobileView}}
   {{#unless view.hideCategory}}
     {{#unless topic.isPinnedUncategorized}}
