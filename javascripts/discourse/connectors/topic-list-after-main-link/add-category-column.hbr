@@ -1,1 +1,1 @@
-{{~raw "add-category-column-list-item" topic=context.topic}}
+{{!-- has-modern-replacement --}}{{~raw "add-category-column-list-item" topic=context.topic}}
