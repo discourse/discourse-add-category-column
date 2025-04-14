@@ -1,4 +1,0 @@
-{{!-- has-modern-replacement --}}
-{{#unless view.hideCategory}}
-  {{raw "topic-list-header-column" sortable=view.sortable order='category' name='category_title'}}
-{{/unless}}
