@@ -1,8 +1,0 @@
-{{!-- has-modern-replacement --}}
-{{#unless view.mobileView}}
-  {{#unless view.hideCategory}}
-    {{#unless topic.isPinnedUncategorized}}
-      {{raw "list/category-column" category=topic.category}}
-    {{/unless}}
-  {{/unless}}
-{{/unless}}
