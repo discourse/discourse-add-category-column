@@ -21,7 +21,7 @@ const ItemCell = <template>
   </td>
 </template>;
 
-export default apiInitializer("0.8", (api) => {
+export default apiInitializer((api) => {
   api.registerValueTransformer("topic-list-columns", ({ value: columns }) => {
     if (api.container.lookup("service:site").desktopView) {
       columns.add(
